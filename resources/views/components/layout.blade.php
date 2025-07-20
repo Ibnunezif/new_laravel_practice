@@ -7,6 +7,9 @@
     <title>LARAVEL APP</title>
 </head>
 <body>
+    @if (session("status"))
+    <div>{{session("status")}}</div 
+    @endif
     {{ $slot }}
 </body>
 </html>

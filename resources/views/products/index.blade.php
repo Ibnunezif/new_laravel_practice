@@ -8,4 +8,5 @@
     <a href="{{ route("products.index") }}/{{ $product->id }}">view product</a>
         
     @endforeach
+    {{ $products->links("vendor/pagination/simple-default"); }}
 </x-layout>
